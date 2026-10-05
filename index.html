@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Portifólio de Projetos de Ciência de Dados</title>
+		<title>Portfólio — Dados, Machine Learning e Infraestrutura</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,11 +22,11 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Portifólio de Projetos </strong> de Ciência de Dados</a>
+									<a href="index.html" class="logo"><strong>Portfólio</strong> — Dados, Machine Learning e Infraestrutura</a>
 									<ul class="icons">
 										<li><a href="https://www.linkedin.com/in/igor-monteiro-730466213" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 										<li><a href="https://github.com/IgMnT" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="icon solid fa-file"><span class="label">Curriculo</span></a></li>
+										<li><a href="curriculo-igor-monteiro.pdf" target="_blank" class="icon solid fa-file"><span class="label">Currículo</span></a></li>
 										
 									</ul>
 								</header>
@@ -35,17 +35,14 @@
 								<section id="banner">
 									<div class="content">
 										<header>
-											<h1>Olá, seja muito bem-vindo (a) ao meu portfólio de projetos de Ciência de Dados<br />
+											<h1>Olá, seja bem-vindo(a) ao meu portfólio de dados<br />
 											</h1>
 											<p></p>
 										</header>
 										<p>
-Nessa página, eu demonstro minhas habilidades de resolver problemas de negócio
-utilizando conceitos e ferramentas da Ciência de Dados, através de projetos com dados
-públicos.
-Você vai encontrar também, minhas experiências profissionais, habilidades,
-ferramentas e conceitos envolvendo a Ciência de Dados.
-Sinta-se à vontade para entrar em contato através dos links no final da página.</p>
+Aqui eu mostro como resolvo problemas reais com dados: pipelines em produção, machine learning aplicado
+e a infraestrutura que mantém tudo rodando. Você também encontra minhas experiências, habilidades e
+formas de contato no final da página.</p>
 										</ul>
 									</div>
 									<span class="image object">
@@ -59,12 +56,12 @@ Sinta-se à vontade para entrar em contato através dos links no final da págin
 									<header class="main">
 										<h1>Sobre Mim</h1>
 									</header>
-									<p>Meu nome é Igor Monteiro, sou estudante do 9º período de Engenharia da Computação pelo Instituto Federal Fluminense (IFF) e atuo como
-										Estagiário de TI na Prefeitura Municipal de Campos dos Goytacazes.
-										Atualmente, trabalho na captura, limpeza e visualização de dados de log e relatórios DMARC com a criação de dashboards, provendo uma soluções alternativas à serviços pagos, gerando assim valor para a empresa.
-										Estou buscando uma oportunidade de trabalhar profissionalmente como Cientista de
-										Dados para melhorar a tomadas de decisão, através da construção de
-										soluções usando dados.
+									<p>Meu nome é Igor Monteiro, sou formando em Engenharia da Computação pelo Instituto Federal Fluminense (IFF) e há dois anos atuo como
+										estagiário de TI na Prefeitura Municipal de Campos dos Goytacazes, construindo pipelines de dados e serviços em produção
+										com Python, PostgreSQL, Docker e Kubernetes.
+									</p>
+									<p>No meu TCC, desenvolvi detecção de anomalias em logs de rede com machine learning sobre 70 milhões de registros.
+										Busco uma oportunidade como Engenheiro de Dados, Engenheiro de Machine Learning ou Cientista de Dados.
 									</p>
 						
 							
@@ -85,7 +82,7 @@ Sinta-se à vontade para entrar em contato através dos links no final da págin
 														<li>Web scraping com Python</li>
 														<li>SQL para extração de dados</li>
 														<li>Banco de Dados SQLite, MySQL e PostgreSQL</li>
-														<li>Web scraping com Python</li>
+														<li>Polars</li>
 													</ul></div>
 										</article>
 										<article>
@@ -95,10 +92,13 @@ Sinta-se à vontade para entrar em contato através dos links no final da págin
 												<ul>
 													<li>Estatística descritiva ( localização, dispersão, assimetria, kurtosis, densidade )</li>
 													<li>Algoritmos de Regressão, classificação, clusterização e "learn to rank"</li>
-													<li>Técnicas de balanceamento dos dados, seleção de atributos e redução dedimensionalidade</li>
+													<li>Técnicas de balanceamento dos dados, seleção de atributos e redução de dimensionalidade</li>
 													<li>Validação cruzada e ajuste de hiperparâmetros</li>
 													<li>Métricas de performance dos algoritmos ( RMSE, MAE, MAPE, Confusion Matrix,Precisão, Recall, Curva ROC, Curva Lift, AUC, Silhouette Score, DB-Index )</li>
 													<li>Pacotes de Machine Learning: Sklearn e Scipy.</li>
+													<li>cuML (aceleração por GPU)</li>
+													<li>MLflow</li>
+													<li>Detecção de anomalias (LOF, Isolation Forest, One-Class SVM, DBSCAN)</li>
 												</ul>
 											</div>
 										</article>
@@ -119,7 +119,23 @@ Sinta-se à vontade para entrar em contato através dos links no final da págin
 												<ul>
 													<li>Git, Github, Gitlab, Virtual Environment e Docker</li>
 													<li>Streamlit, Flask, Python API's</li>
+													<li>FastAPI</li>
+													<li>SQLAlchemy e Alembic</li>
+													<li>GitHub Actions</li>
 														</ul>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-server"></span>
+											<div class="content">
+												<h3>Engenharia de Dados e Infraestrutura</h3>
+												<ul>
+													<li>Pipelines de dados (ETL/ELT) e ingestão via APIs e IMAP</li>
+													<li>Kubernetes, Kustomize, Argo CD e Sealed Secrets (GitOps)</li>
+													<li>Docker e Docker Compose</li>
+													<li>OpenTelemetry, Grafana Loki, Promtail e Grafana</li>
+													<li>GitLab CI e GitHub Actions</li>
+												</ul>
 											</div>
 										</article>
 									</div>
@@ -133,19 +149,25 @@ Sinta-se à vontade para entrar em contato através dos links no final da págin
 									</header>
 
 									<!-- Content -->
-										<h2 id="content">4+ Projetos completos de Ciência de Dados</h2>
+										<h2 id="content">6 projetos publicados</h2>
 										<p>Projetos publicados no GitHub entre ciência de dados, engenharia de dados e segurança de redes: do treino e avaliação de
 											modelos de machine learning a pipelines de dados em produção no Kubernetes e APIs que automatizam a operação de firewalls.
 											Os detalhes de cada um estão na seção de projetos abaixo.</p>
 										<div class="row">
 											<div class="main">
-												<h3>1+ anos como Estagiário de TI — Prefeitura de Campos dos Goytacazes</h3>
+												<h3>2 anos como Estagiário de TI — Prefeitura de Campos dos Goytacazes</h3>
 														<p>
 														Durante meu período na Prefeitura de Campos dos Goytacazes, atuei na área de tecnologia da informação com foco em automação, auditoria de dados e segurança da informação. Entre os principais projetos que desenvolvi estão:
 														</p>
 														<ul>
 														<li>
 															Implementação de um sistema em Python para captura e processamento de relatórios DMARC enviados por e-mail, com armazenamento em banco de dados PostgreSQL e visualização via Metabase — uma alternativa gratuita ao serviço pago DMARC Digest.
+														</li>
+														<li>
+															Desenvolvimento de uma API assíncrona (FastAPI e PostgreSQL) que centraliza os bloqueios dos firewalls MikroTik e permite o desbloqueio de máquinas por autoatendimento, substituindo chamados manuais.
+														</li>
+														<li>
+															Implantação da coleta de logs de rede com OpenTelemetry, Grafana Loki e Grafana, e deploy de serviços com Docker, Kubernetes e Argo CD.
 														</li>
 														<li>
 															Desenvolvimento de um script de captura de logs de autenticação do domínio corporativo, possibilitando auditorias completas de eventos de login e logoff dos servidores públicos.
@@ -168,9 +190,101 @@ Sinta-se à vontade para entrar em contato através dos links no final da págin
 								<!-- Projetos -->
 								<section>
 									<header class="major">
-										<h1>Projetos em Ciência de Dados</h1>
+										<h1>Projetos</h1>
 									</header>
 									<div class="posts">
+										<article>
+											<a href="https://github.com/IgMnT/mikrotik-anomaly-detection" class="image"><img src="images/tcc-anomalias.png" alt="Gráfico do recall por evento de cada algoritmo: LOF 96%, DBSCAN 92%, One-Class SVM 90%, ensemble 89%, Isolation Forest 74%, K-Means 8% e regras do firewall 0%" /></a>
+											<h3>Detecção de Anomalias em Logs de Rede (TCC)</h3>
+											<p>As regras estáticas dos firewalls MikroTik não detectaram nenhum dos 25 ataques lentos e distribuídos testados.
+												Montei uma stack de observabilidade (OpenTelemetry, Loki e Grafana) que coletou 70 milhões de registros em uma semana
+												e treinei detectores não supervisionados sobre esses logs: o LOF detectou 96% dos ataques, e um serviço de inferência
+												em tempo quase real gera alertas com latência mediana de cerca de 7 minutos.</p>
+											<h4>As ferramentas utilizadas foram:
+</h4>
+															<ul>
+																<li>Python, Polars, Scikit-learn e cuML (GPU)</li>
+																<li>LOF, DBSCAN, One-Class SVM, Isolation Forest e K-Means</li>
+																<li>OpenTelemetry, Grafana Loki, Grafana e Docker</li>
+															</ul>
+											<ul class="actions">
+												<li><a href="https://github.com/IgMnT/mikrotik-anomaly-detection" class="button">Saiba Mais</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="https://github.com/IgMnT/dmarc-exporter" class="image"><img src="images/dmarc-metabase.png" alt="Painel DMARC no Metabase" /></a>
+											<h3>Projeto de Monitoramento DMARC</h3>
+											<p>Os relatórios DMARC chegam por e-mail como centenas de XMLs compactados, ilegíveis à mão.
+												Construí um pipeline de dados em produção que lê a caixa via IMAP, extrai os relatórios e grava em PostgreSQL,
+												rodando como CronJob no Kubernetes com entrega via GitOps. O painel no Metabase acompanha cerca de 85 mil e-mails
+												em 4 dias, com 99,88% de conformidade, e revelou que o alinhamento DKIM estava em 0%.</p>
+											<h4>As ferramentas utilizadas foram:
+</h4>
+															<ul>
+																<li>Python 3.12 e PostgreSQL</li>
+																<li>Kubernetes (CronJob), Kustomize, Argo CD e Sealed Secrets</li>
+																<li>GitLab CI e Metabase</li>
+															</ul>
+											<ul class="actions">
+												<li><a href="https://github.com/IgMnT/dmarc-exporter" class="button">Saiba Mais</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="https://github.com/IgMnT/mac-control" class="image"><img src="images/mac-control.png" alt="Diagrama: roteadores MikroTik enviam bloqueios à API FastAPI, que grava no PostgreSQL; o suporte libera máquinas pela API" /></a>
+											<h3>Bloqueio Centralizado de MACs em Firewalls MikroTik</h3>
+											<p>Cada roteador bloqueava dispositivos atacantes isoladamente, e liberar uma máquina já limpa exigia chamado e edição manual do firewall.
+												Desenvolvi uma API assíncrona que centraliza os bloqueios em PostgreSQL, com histórico auditável, e scripts RouterOS que
+												mantêm os roteadores sincronizados, permitindo que o suporte desbloqueie máquinas por autoatendimento. Protótipo testado ponta a ponta, em preparação para produção.</p>
+											<h4>As ferramentas utilizadas foram:
+</h4>
+															<ul>
+																<li>Python, FastAPI (async) e SQLAlchemy</li>
+																<li>PostgreSQL, Alembic e Docker</li>
+																<li>RouterOS scripting, pytest e GitHub Actions</li>
+															</ul>
+											<ul class="actions">
+												<li><a href="https://github.com/IgMnT/mac-control" class="button">Saiba Mais</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="https://github.com/IgMnT/Projeto01-PropensaoDeCompra" class="image"><img src="images/projeto04.png" alt="" /></a>
+											<h3>Previsão de Cross-Sell de Seguro de Saúde</h3>
+											<p>Este projeto desenvolve um modelo de machine learning para prever a propensão de clientes de seguro de automóvel a se interessarem por um seguro de saúde,
+												 otimizando campanhas de cross-sell através de uma API REST.
+											</p>
+											<h4>As ferramentas utilizadas foram:
+</h4>
+															<ul>
+																<li>Python & Pandas</li>
+                												<li>Scikit-learn</li>
+                												<li>Flask & Render (para deploy)</li>
+															</ul>
+											<ul class="actions">
+												<li><a href="https://github.com/IgMnT/Projeto01-PropensaoDeCompra" class="button">Saiba Mais</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="https://github.com/IgMnT/ProjetoFinalFTC" class="image"><img src="images/streamlit.jpg" alt="" /></a>
+											<h3>Desenvolvimento de um Painel Gerencial para Negócio	com o Streamlit</h3>
+											<p>Nesse projeto, os conceitos de Programação em Python, manipulação de
+												dados, pensamento estratégico e lógica de negócio, junto com ferramentas
+												de desenvolvimetno web como o Streamlit e Github, foram usados para
+												desenvolver um painel gerencial com as principais métricas de uma empresa
+												marketplace de delivery de comida na India.
+												O resultado final do projeto foi um painel hospedado em um ambiente Cloud
+												e disponibilizado através de um link web. O painel pode ser acessado por
+												qualquer dispositivo conectado na internet.</p>
+											<h4>As ferramentas utilizadas foram:
+</h4>
+															<ul>
+																<li>Python 3.13</li>
+																<li>Jupyter Lab</li>
+																<li>Streamlit, Streamlit Cloud</li>
+															</ul>
+											<ul class="actions">
+												<li><a href="https://github.com/IgMnT/ProjetoFinalFTC" class="button">Saiba Mais</a></li>
+											</ul>
+										</article>
 										<article>
 											<a href="https://github.com/IgMnT/EnsaioMachineLearning" class="image"><img src="images/machine-redimensionado.jpg" alt="" /></a>
 											<h3>Ensaio de Machine Learning</h3>
@@ -201,98 +315,6 @@ Sinta-se à vontade para entrar em contato através dos links no final da págin
 												<li><a href="https://github.com/IgMnT/EnsaioMachineLearning" class="button">Saiba Mais</a></li>
 											</ul>
 										</article>
-										<article>
-											<a href="https://github.com/IgMnT/ProjetoFinalFTC" class="image"><img src="images/streamlit.jpg" alt="" /></a>
-											<h3>Desenvolvimento de um Painel Gerencial para Negócio	com o Streamlit</h3>
-											<p>Nesse projeto, os conceitos de Programação em Python, manipulação de
-												dados, pensamento estratégico e lógica de negócio, junto com ferramentas
-												de desenvolvimetno web como o Streamlit e Github, foram usados para
-												desenvolver um painel gerencial com as principais métricas de uma empresa
-												marketplace de delivery de comida na India.
-												O resultado final do projeto foi um painel hospedado em um ambiente Cloud
-												e disponibilizado através de um link web. O painel pode ser acessado por
-												qualquer dispositivo conectado na internet.</p>
-											<h4>As ferramentas utilizadas foram:
-</h4>
-															<ul>
-																<li>Python 3.13</li>
-																<li>Jupyter Lab</li>
-																<li>Streamlit, Streamlit Cloud</li>
-															</ul>
-											<ul class="actions">
-												<li><a href="https://github.com/IgMnT/ProjetoFinalFTC" class="button">Saiba Mais</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="https://github.com/IgMnT/dmarc-exporter" class="image"><img src="images/policy-dmarc.png" alt="" /></a>
-											<h3>Projeto de Monitoramento DMARC</h3>
-											<p>Os relatórios DMARC chegam por e-mail como centenas de XMLs compactados, ilegíveis à mão.
-												Construí um pipeline de dados em produção que lê a caixa via IMAP, extrai os relatórios e grava em PostgreSQL,
-												rodando como CronJob no Kubernetes com entrega via GitOps. O painel no Metabase acompanha cerca de 85 mil e-mails
-												em 4 dias, com 99,88% de conformidade, e revelou que o alinhamento DKIM estava em 0%.</p>
-											<h4>As ferramentas utilizadas foram:
-</h4>
-															<ul>
-																<li>Python 3.12 e PostgreSQL</li>
-																<li>Kubernetes (CronJob), Kustomize, Argo CD e Sealed Secrets</li>
-																<li>GitLab CI e Metabase</li>
-															</ul>
-											<ul class="actions">
-												<li><a href="https://github.com/IgMnT/dmarc-exporter" class="button">Saiba Mais</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="https://github.com/IgMnT/Projeto01-PropensaoDeCompra" class="image"><img src="images/projeto04.png" alt="" /></a>
-											<h3>Previsão de Cross-Sell de Seguro de Saúde</h3>
-											<p>Este projeto desenvolve um modelo de machine learning para prever a propensão de clientes de seguro de automóvel a se interessarem por um seguro de saúde,
-												 otimizando campanhas de cross-sell através de uma API REST.
-											</p>
-											<h4>As ferramentas utilizadas foram:
-</h4>
-															<ul>
-																<li>Python & Pandas</li>
-                												<li>Scikit-learn</li>
-                												<li>Flask & Render (para deploy)</li>
-															</ul>
-											<ul class="actions">
-												<li><a href="https://github.com/IgMnT/Projeto01-PropensaoDeCompra" class="button">Saiba Mais</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="https://github.com/IgMnT/mikrotik-anomaly-detection" class="image"><img src="images/tcc-anomalias.png" alt="Gráfico do recall por evento de cada algoritmo: LOF 96%, DBSCAN 92%, One-Class SVM 90%, ensemble 89%, Isolation Forest 74%, K-Means 8% e regras do firewall 0%" /></a>
-											<h3>Detecção de Anomalias em Logs de Rede (TCC)</h3>
-											<p>As regras estáticas dos firewalls MikroTik não detectaram nenhum dos 25 ataques lentos e distribuídos testados.
-												Montei uma stack de observabilidade (OpenTelemetry, Loki e Grafana) que coletou 70 milhões de registros em uma semana
-												e treinei detectores não supervisionados sobre esses logs: o LOF detectou 96% dos ataques, e um serviço de inferência
-												em tempo quase real gera alertas com latência mediana de cerca de 7 minutos.</p>
-											<h4>As ferramentas utilizadas foram:
-</h4>
-															<ul>
-																<li>Python, Polars, Scikit-learn e cuML (GPU)</li>
-																<li>LOF, DBSCAN, One-Class SVM, Isolation Forest e K-Means</li>
-																<li>OpenTelemetry, Grafana Loki, Grafana e Docker</li>
-															</ul>
-											<ul class="actions">
-												<li><a href="https://github.com/IgMnT/mikrotik-anomaly-detection" class="button">Saiba Mais</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="https://github.com/IgMnT/mac-control" class="image"><img src="images/mac-control.png" alt="Diagrama: roteadores MikroTik enviam bloqueios à API FastAPI, que grava no PostgreSQL; o suporte libera máquinas pela API" /></a>
-											<h3>Bloqueio Centralizado de MACs em Firewalls MikroTik</h3>
-											<p>Cada roteador bloqueava dispositivos atacantes isoladamente, e liberar uma máquina já limpa exigia chamado e edição manual do firewall.
-												Desenvolvi uma API assíncrona que centraliza os bloqueios em PostgreSQL, com histórico auditável, e scripts RouterOS que
-												mantêm os roteadores sincronizados, permitindo que o suporte desbloqueie máquinas por autoatendimento. Protótipo testado ponta a ponta, em preparação para produção.</p>
-											<h4>As ferramentas utilizadas foram:
-</h4>
-															<ul>
-																<li>Python, FastAPI (async) e SQLAlchemy</li>
-																<li>PostgreSQL, Alembic e Docker</li>
-																<li>RouterOS scripting, pytest e GitHub Actions</li>
-															</ul>
-											<ul class="actions">
-												<li><a href="https://github.com/IgMnT/mac-control" class="button">Saiba Mais</a></li>
-											</ul>
-										</article>
 									</div>
 								</section>
 
@@ -301,13 +323,14 @@ Sinta-se à vontade para entrar em contato através dos links no final da págin
 									<header class="major">
 										<h2>Entre em contato</h2>
 									</header>
-									<p>Sinta-se a vontade para entrar em contato</p>
+									<p>Sinta-se à vontade para entrar em contato</p>
 									<ul class="contact">
 										<li class="icon solid fa-envelope">igormagro@live.com</li>
 										<li class="icon brands fa-linkedin">LinkedIn: <a href="https://www.linkedin.com/in/igor-monteiro-730466213/">https://www.linkedin.com/in/igor-monteiro-730466213/</a><br />
 										<li class="icon brands fa-github">GitHub: <a href="https://github.com/IgMnT">https://github.com/IgMnT</a><br />
-										<li class="icon solid fa-file"><a href="#">Currículo: link</a><br />
+										<li class="icon solid fa-file">Currículo: <a href="curriculo-igor-monteiro.pdf" target="_blank">baixar PDF</a><br />
 									</ul>
+									<p>Design: <a href="https://html5up.net">HTML5 UP</a></p>
 								</section>
 						
 						
