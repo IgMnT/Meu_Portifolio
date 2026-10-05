@@ -224,14 +224,16 @@ Sinta-se à vontade para entrar em contato através dos links no final da págin
 										<article>
 											<a href="https://github.com/IgMnT/dmarc-exporter" class="image"><img src="images/policy-dmarc.png" alt="" /></a>
 											<h3>Projeto de Monitoramento DMARC</h3>
-											<p>Este projeto tem como objetivo a visualização e análise dos relatórios de conformidade DMARC do domínio da Prefeitura Municipal de Campos dos Goytacazes., 
-												utilizando painéis de Business Intelligence (BI) para oferecer insights claros sobre autenticação de e-mails, segurança e alinhamento com SPF/DKIM.</p>
+											<p>Os relatórios DMARC chegam por e-mail como centenas de XMLs compactados, ilegíveis à mão.
+												Construí um pipeline de dados em produção que lê a caixa via IMAP, extrai os relatórios e grava em PostgreSQL,
+												rodando como CronJob no Kubernetes com entrega via GitOps. O painel no Metabase acompanha cerca de 85 mil e-mails
+												em 4 dias, com 99,88% de conformidade, e revelou que o alinhamento DKIM estava em 0%.</p>
 											<h4>As ferramentas utilizadas foram:
 </h4>
 															<ul>
-																<li>Python 3.13</li>
-																<li>Metabase</li>
-																<li>Kubernetes</li>
+																<li>Python 3.12 e PostgreSQL</li>
+																<li>Kubernetes (CronJob), Kustomize, Argo CD e Sealed Secrets</li>
+																<li>GitLab CI e Metabase</li>
 															</ul>
 											<ul class="actions">
 												<li><a href="https://github.com/IgMnT/dmarc-exporter" class="button">Saiba Mais</a></li>
@@ -255,33 +257,38 @@ Sinta-se à vontade para entrar em contato através dos links no final da págin
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3>Projeto 05</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<a href="https://github.com/IgMnT/mikrotik-anomaly-detection" class="image"><img src="images/tcc-anomalias.png" alt="Gráfico do recall por evento de cada algoritmo: LOF 96%, DBSCAN 92%, One-Class SVM 90%, ensemble 89%, Isolation Forest 74%, K-Means 8% e regras do firewall 0%" /></a>
+											<h3>Detecção de Anomalias em Logs de Rede (TCC)</h3>
+											<p>As regras estáticas dos firewalls MikroTik não detectaram nenhum dos 25 ataques lentos e distribuídos testados.
+												Montei uma stack de observabilidade (OpenTelemetry, Loki e Grafana) que coletou 70 milhões de registros em uma semana
+												e treinei detectores não supervisionados sobre esses logs: o LOF detectou 96% dos ataques, e um serviço de inferência
+												em tempo quase real gera alertas com latência mediana de cerca de 7 minutos.</p>
 											<h4>As ferramentas utilizadas foram:
 </h4>
 															<ul>
-																<li>Dolor etiam magna etiam.</li>
-																<li>Sagittis lorem eleifend.</li>
-																<li>Felis dolore viverra.</li>
+																<li>Python, Polars, Scikit-learn e cuML (GPU)</li>
+																<li>LOF, DBSCAN, One-Class SVM, Isolation Forest e K-Means</li>
+																<li>OpenTelemetry, Grafana Loki, Grafana e Docker</li>
 															</ul>
 											<ul class="actions">
-												<li><a href="#" class="button">Saiba Mais</a></li>
+												<li><a href="https://github.com/IgMnT/mikrotik-anomaly-detection" class="button">Saiba Mais</a></li>
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3>Projeto 06</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<a href="https://github.com/IgMnT/mac-control" class="image"><img src="images/mac-control.png" alt="Diagrama: roteadores MikroTik enviam bloqueios à API FastAPI, que grava no PostgreSQL; o suporte libera máquinas pela API" /></a>
+											<h3>Bloqueio Centralizado de MACs em Firewalls MikroTik</h3>
+											<p>Cada roteador bloqueava dispositivos atacantes isoladamente, e liberar uma máquina já limpa exigia chamado e edição manual do firewall.
+												Desenvolvi uma API assíncrona que centraliza os bloqueios em PostgreSQL, com histórico auditável, e scripts RouterOS que
+												mantêm os roteadores sincronizados, permitindo que o suporte desbloqueie máquinas por autoatendimento. Protótipo testado ponta a ponta, em preparação para produção.</p>
 											<h4>As ferramentas utilizadas foram:
 </h4>
 															<ul>
-																<li>Dolor etiam magna etiam.</li>
-																<li>Sagittis lorem eleifend.</li>
-																<li>Felis dolore viverra.</li>
+																<li>Python, FastAPI (async) e SQLAlchemy</li>
+																<li>PostgreSQL, Alembic e Docker</li>
+																<li>RouterOS scripting, pytest e GitHub Actions</li>
 															</ul>
 											<ul class="actions">
-												<li><a href="#" class="button">Saiba Mais</a></li>
+												<li><a href="https://github.com/IgMnT/mac-control" class="button">Saiba Mais</a></li>
 											</ul>
 										</article>
 									</div>
