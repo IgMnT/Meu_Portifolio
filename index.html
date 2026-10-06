@@ -10,6 +10,13 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#banner .image.foto { width: 30%; align-self: center; }
+			#banner .image.foto img { height: auto; aspect-ratio: 1 / 1; }
+			@media screen and (orientation: portrait) {
+				#banner .image.foto { width: 60%; max-width: 18em; height: auto; min-height: 0; max-height: none; margin: 0 auto 3em; }
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -45,8 +52,8 @@ e a infraestrutura que mantém tudo rodando. Você também encontra minhas exper
 formas de contato no final da página.</p>
 										</ul>
 									</div>
-									<span class="image object">
-										<img src="images/igor-monteiro.jpg" alt="Foto de Igor Monteiro Magro" style="object-position: center 60%;" />
+									<span class="image object foto">
+										<img src="images/igor-monteiro.jpg" alt="Foto de Igor Monteiro Magro" />
 									</span>
 								</section>
 
